@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single E-commerce Product Page </title>
+    <body style="background-color:azure;"></body>
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    <!---Boxicons CDN Setup for icons-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="single-product">
+            <div class="row">
+                <div class="col-6">
+                    <div class="product-image">
+                        <div class="product-image-main">
+                            <img src="img/8 pro.png" alt="" id="product-main-image">
+                        </div>
+                        <div class="product-image-slider">
+                            <img src="img/black.png" alt=""  class="image-list">
+                            <img src="img/white.png" alt=""  class="image-list">
+                            <img src="img/blue.png" alt=""  class="image-list">
+                            <img src="img/8 pro.png" alt=""  class="image-list">
+                        </div>
+                    </div>
+                </div>
+                <!--product main page-->
+                <div class="col-6">
+                    <div class="breadcrumb">
+                        <span><a href="#">Home</a></span>
+                        <span><a href="#">Product</a></span>
+                        <span class="active">phone</span>
+                    </div>
+
+                    <div class="product">
+                        <div class="product-title">
+                            <h2>google pixel 8 pro</h2>
+                        </div>
+                        <div class="product-rating">
+                            <span><i class="bx bxs-star"></i></span>
+                            <span><i class="bx bxs-star"></i></span>
+                            <span><i class="bx bxs-star"></i></span>
+                            <span><i class="bx bxs-star"></i></span>
+                            <span><i class="bx bxs-star"></i></span>
+                            <span class="review">(75 Review)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="offer-price">Get up to $750 off the new Pixel 8 Pro<br/> sale-price $999.00</span>
+                            
+                        </div>
+
+                        <div class="product-details">
+                            <h2>Description</h2>
+                            <p>The Google Pixel 8 Pro is a high-end smartphone known for its cutting-edge camera technology, fast performance, and clean Android experience. It features a powerful processor, stunning OLED display, and a versatile camera system that excels in photography and videography. Additionally, it offers 5G connectivity and the latest software updates from Google, making it a top choice for Android enthusiasts and photography enthusiasts alike.</p>
+                        </div>
+                        
+                        <div class="product-color">
+                            <h4>Color</h4>
+                            <div class="color-layout">
+                                <input type="radio" name="color"  value="black" class="color-input">
+                                <label for="black" class="black"></label>
+                                <input type="radio" name="color"  value="white" class="color-input">
+                                <label for="white" class="white"></label>
+
+                                <input type="radio" name="color"  value="blue" class="color-input">
+                                <label for="blue" class="blue"></label>
+                            </div>
+                        </div>
+                        <span class="divider"></span>
+                        <label for="quantity">Quantity:</label>
+                        <input type="number" id="quantity" value="1" min="1">
+                        <span></span>
+                        <br/>
+                        <br/>
+                        <div class="product-btn-group">
+                            <div class="button buy-now"><i class='bx bxs-zap' ></i> Buy Now</div>
+                            <button id="addToCartButton"onclick= "show('popup')"><i class='bx bxs-cart' ></i>Add to Cart </button>
+                            <div class="button view-cart" onclick="location.href='#cart'"><i class='bx bxs-show' ></i> view cart</div>
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="popup" id="popup">
+
+                <p><br/>
+                    <br/>Item is added to cart</p>
+                
+                <a href="#" onclick="hide('popup')"><i class='bx bxs-close'></i><br/>Close</a>
+              </div>
+            
+            <div class="row">
+                <div class="H">
+                    <p>This text will be vertically -- aligned</p>
+                  </div>
+                <h2>With Google AI and the best Pixel Camera, it’s<br/>the most powerful, personal Pixel yet.</h2>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+            
+            </div>
+            <!--product description-->
+            <div class="row">
+                <div class="col1">
+                    <br/>
+                    <img src="img/tech.png" alt="Dinosaur" width="500" height="600"/>
+                  </div>
+                  <div class="col2">
+                      <p> <br/> </p>
+                      <h1>Product details</h1>
+                      <br/> 
+                      <h3>Display</h3> <p>   Super Actua display<br/>Full-screen 6.7-inch display<br/>20:9 aspect ratio<br/>1344 x 2992 resolution<br/></p>
+                      <h3>Dimensions and weight </h3><p>    6.4 height x 3.0 width x 0.3 depth (in), 162.6 height x 76.5 width x 8.8 depth (mm)<br/>213 g, 7.5 oz  </p>
+                      <h3>Memory and storage</h3><p>12 GB LPDDR5X RAM
+                         <br/> 128 GB / 256 GB / 512 GB / 1 TB UFS 3.1 storage<br/></p>
+                         <h3>Processor</h3> <p>Google Tensor G3
+          
+                          <br/>Titan M2 security coprocessor
+                      <br/></p>
+                          <h3>Camera features</h3> <p>Rear camera-
+                              50 MP Octa PD wide camera<br/>48 MP Quad PD ultrawide camera with autofocus<br/>48 MP Quad PD telephoto camera<br/>Front camera-
+                              10.5 MP Dual PD selfie camera</p>
+                              <h3>SIMs</h3><p>Dual SIM (Single Nano SIM and eSIM)</p>
+                             <h3> Security and OS updates</h3><p>7 years of OS, security, and Feature Drop updates</p>
+                             <h3>Warranty</h3> <p>1 year</p>
+                   </div>
+                
+            </div>
+            </div>
+
+        </div>
+    </div>
+    <!--cart-->
+    <div id="cart">
+        <h1>Your Cart<br/><br/></h1>
+        <hr width="100%" color="black" />
+        <br/>
+        <ul id="cartItems"></ul>
+        <h3>Total Price: $<span id="cartTotal">0.00</span></h3>
+    </div>
+    <!--script-->
+    <script src="script.js"></script>
+</body>
+</html>
